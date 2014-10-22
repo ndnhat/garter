@@ -1,5 +1,14 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  //h1= title
+
+  div#rtChart.rtChart
+
+  div.rtCounters
+
+  script.
+    var chartSeries = !{JSON.stringify(chartSeries)};
+  script(src="javascripts/jquery.min.js")
+  script(src="javascripts/highcharts.js")
+  script(src="javascripts/dashboard.js")

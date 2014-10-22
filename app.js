@@ -7,6 +7,8 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var gart = require('./routes/gart');
+var GAConfig = require('./lib/gaconfig');
+var GAQuery = require('./lib/gaquery');
 
 var app = express();
 
@@ -30,6 +32,9 @@ app.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
+
+/// create query object
+gaquery = new GAQuery(new GAConfig(process.env));
 
 /// error handlers
 
