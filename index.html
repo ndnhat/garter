@@ -34,10 +34,12 @@
         <h2>
 <a name="garter" class="anchor" href="#garter"><span class="octicon octicon-link"></span></a>GARTER</h2>
 
+<p><a href="https://camo.githubusercontent.com/352d8ad7c4edcf8584955e1bf9059f3efcb87d31/687474703a2f2f6e646e6861742e6769746875622e696f2f6761727465722f696d616765732f64617368626f6172642e706e67" target="_blank"><img src="https://camo.githubusercontent.com/352d8ad7c4edcf8584955e1bf9059f3efcb87d31/687474703a2f2f6e646e6861742e6769746875622e696f2f6761727465722f696d616765732f64617368626f6172642e706e67" alt="Screenshot" data-canonical-src="http://ndnhat.github.io/garter/images/dashboard.png" style="max-width:100%;"></a></p>
+
 <h3>
 <a name="introduction" class="anchor" href="#introduction"><span class="octicon octicon-link"></span></a>Introduction</h3>
 
-<p>Google Analytics web interface does not allows users to monitor realtime traffic from multiple Google Analytics profiles on a single screen. Garter was created in hope to alleviate this problem.</p>
+<p>Google Analytics web interface does not allow users to monitor realtime traffic from multiple Google Analytics profiles on a single screen. Garter was created in hope to alleviate this problem.</p>
 
 <h3>
 <a name="setup" class="anchor" href="#setup"><span class="octicon octicon-link"></span></a>Setup</h3>
@@ -56,9 +58,9 @@ GA_PROFILE_IDS=comma_separated_profile_ids
 GA_PROFILE_NAME=comma_separated_profile_names
 </code></pre>
 
-<p>In addition, you may need to go to the <a href="https://console.developers.google.com">Google Developers Console</a> to increase the Analytics API setting for "Per User Limit". It is recommended to change the limit to 10 requests/second/user. </p>
+<p>In addition, the "Per User Limit" setting for Analytics API in <a href="https://console.developers.google.com">Google Developers Console</a>may need to be increased. It is recommended to change the limit to 10 requests/second/user. </p>
 
-<p>Google also impose a 50,000 requests/day for most Analytics API developers. By default, Garter will query the Google Analytics API once every minute for each profile id provided which translates to 1440 requests/profile/day. </p>
+<p>Google also imposes a 50,000 requests/day for most Analytics API developers. By default, Garter will query the Google Analytics API once every minute for each profile id provided which translates to 1440 requests/profile/day. </p>
 
 <h3>
 <a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h3>
@@ -68,7 +70,7 @@ GA_PROFILE_NAME=comma_separated_profile_names
 <ul>
 <li><a href="http://expressjs.com">expressjs</a></li>
 <li><a href="http://www.highcharts.com/">highcharts</a></li>
-<li><a href="https://github.com/ncb000gt/node-googleanalytics">node-googleanalytics</a></li>
+<li><a href="https://github.com/ncb000gt/node-googleanalytics">googleanalytics</a></li>
 </ul>
       </section>
     </div>
@@ -77,7 +79,6 @@ GA_PROFILE_NAME=comma_separated_profile_names
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         <p class="copyright">Garter - Google Analytics Realtime Dashboard maintained by <a href="https://github.com/ndnhat">ndnhat</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 
