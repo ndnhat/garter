@@ -19,7 +19,7 @@ Garter requires a number of environment variables:
 GA_USER=your_google_analytics_username
 GA_PASSWORD=your_google_analytics_password
 GA_PROFILE_IDS=comma_separated_profile_ids
-GA_PROFILE_NAME=comma_separated_profile_names
+GA_PROFILE_NAMES=comma_separated_profile_names
 ```
 
 In addition, the "Per User Limit" setting for Analytics API in [Google Developers Console](https://console.developers.google.com) may need to be increased. It is recommended to change the limit to 10 requests/second/user. 

@@ -39,3 +39,21 @@ h3 {
   border-radius: 5px;
   background: #fff;
 }
+.alert {
+  border-style: solid;
+  border-width: 1px;
+  display: none;
+  font-weight: normal;
+  margin-bottom: 1.11111rem;
+  position: relative;
+  padding: 0.77778rem 1.33333rem 0.77778rem 0.77778rem;
+  text-align: center;
+  transition: opacity 300ms ease-out;
+  background-color: #008cba;
+  border-color: #0078a0;
+  color: #fff;
+}
+.alert.error {
+  background-color: #f04124;
+  border-color: #de2d0f;
+}

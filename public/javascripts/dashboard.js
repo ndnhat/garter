@@ -56,13 +56,25 @@
     $.ajax({
       url: '/gart',
       dataType: 'json',
-      success: function (data) {
-        for (var i = 0; i < data.users.length; i++) {
-          chart.series[i].addPoint([data.time, data.users[i]], true, true);
-          $('#counter_' + i + ' h3').text(data.users[i]);
-        }
-      }
+      success: update,
+      error: showError
     });
+  }
+
+  function update(data) {
+    for (var i = 0; i < data.users.length; i++) {
+      chart.series[i].addPoint([data.time, data.users[i]], true, true);
+      $('#counter_' + i + ' h3').text(data.users[i]);
+    }
+    clearError();
+  }
+
+  function showError() {
+    $('.alert').addClass('error').text('Failed to update').show();
+  }
+
+  function clearError() {
+    $('.error').hide();
   }
 
   function initCounters(series, container) {

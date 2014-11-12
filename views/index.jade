@@ -3,9 +3,10 @@ extends layout
 block content
   //h1= title
 
-  div#rtChart.rtChart
+  #rtChart.rtChart
 
-  div.rtCounters
+  .alert
+  .rtCounters
 
   script.
     var chartSeries = !{JSON.stringify(chartSeries)};
