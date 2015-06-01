@@ -1,6 +1,6 @@
 {
-  "name": "ga-api",
-  "version": "0.0.1",
+  "name": "garter",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
@@ -10,10 +10,9 @@
     "body-parser": "~1.0.0",
     "cookie-parser": "~1.0.1",
     "debug": "~0.7.4",
+    "envs": "^0.1.6",
     "express": "~4.2.0",
-    "gapitoken": "^0.1.3",
-    "googleanalytics": "^0.3.6",
-    "googleapis": "^0.8.0",
+    "googleapis": "^2.0.4",
     "jade": "~1.3.0",
     "morgan": "~1.0.0",
     "static-favicon": "~1.0.0",

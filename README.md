@@ -16,8 +16,8 @@ npm start
 ```
 Garter requires a number of environment variables:
 ```
-GA_USER=your_google_analytics_username
-GA_PASSWORD=your_google_analytics_password
+GOOGLE_APPLICATION_CREDENTIALS=your_google_application_credentials
+GA_EMAIL=your_google_service_account_email
 GA_PROFILE_IDS=comma_separated_profile_ids
 GA_PROFILE_NAMES=comma_separated_profile_names
 ```
@@ -31,4 +31,4 @@ Garter is made possible by a number of great open-source tools:
 
 * [expressjs](http://expressjs.com)
 * [highcharts](http://www.highcharts.com/)
-* [googleanalytics](https://github.com/ncb000gt/node-googleanalytics)
+* [googleapis](https://github.com/google/google-api-nodejs-client/)
