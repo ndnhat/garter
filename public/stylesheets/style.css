@@ -26,10 +26,10 @@ h3 {
   border: 1px solid #dadada;
   border-radius: 5px;
 }
-.rtCounters {
+.rtWidgets {
   text-align: center;
 }
-.rtCounters div {
+.rtWidgets div {
   display: inline-block;
   width: 16%;
   margin: 1%;

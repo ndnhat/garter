@@ -64,7 +64,7 @@
   function update(data) {
     for (var i = 0; i < data.users.length; i++) {
       chart.series[i].addPoint([data.time, data.users[i]], true, true);
-      $('#counter_' + i + ' h3').text(data.users[i]);
+      $('#widget_' + i + ' h3').text(data.users[i]);
     }
     clearError();
   }
@@ -77,23 +77,20 @@
     $('.error').hide();
   }
 
-  function initCounters(series, container) {
+  function initWidgets(series, container) {
     for (var i = 0; i < series.length; i++) {
-      var elem = $('<div>').attr('id', 'counter_' + i)
-        .append($('<h2>').text(series[i].name))
-        .append($('<h3>').text(series[i].data[series[i].data.length - 1]));
-      container.append(elem);
+      container.widget({index: i, series: series[i]});
     }
   }
 
   $(document).ready(function () {
-    initCounters(seriesData, $('.rtCounters'));
+    initWidgets(seriesData, $('.rtWidgets'));
 
     Highcharts.setOptions({
       global: {
         useUTC: false
       }
     });
-    chart = $('#rtChart').highcharts(options).highcharts();
+    chart = $('#rtChart').highcharts(options);
   });
 })(jQuery, chartSeries);
