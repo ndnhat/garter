@@ -29,7 +29,7 @@ h3 {
 .rtWidgets {
   text-align: center;
 }
-.rtWidgets div {
+.rtWidgets>div {
   display: inline-block;
   width: 16%;
   margin: 1%;
