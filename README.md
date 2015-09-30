@@ -17,9 +17,11 @@ npm start
 Garter requires a number of environment variables:
 ```
 GOOGLE_APPLICATION_CREDENTIALS=your_google_application_credentials
+GOOGLE_APPLICATION_SCOPES=https://www.googleapis.com/auth/analytics.readonly
 GA_EMAIL=your_google_service_account_email
 GA_PROFILE_IDS=comma_separated_profile_ids
 GA_PROFILE_NAMES=comma_separated_profile_names
+DEBUG=garter
 ```
 
 In addition, the "Per User Limit" setting for Analytics API in [Google Developers Console](https://console.developers.google.com) may need to be increased. It is recommended to change the limit to 10 requests/second/user. 
